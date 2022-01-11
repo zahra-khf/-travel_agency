@@ -1,0 +1,36 @@
+{
+    "$schema": "http://json-schema.org/schema#",
+    "type": "object",
+    "properties": {
+        "userEmail": {
+            "type": "string",
+            "format": "email"
+        },
+        "userName": {
+            "type": "string"
+        },
+        "userCountry": {
+            "type": "string"
+        },
+        "weatherExpectation": {
+            "type": "string",
+            "enum": [
+                "WARMER",
+                "COLDER"
+            ]
+        },
+        "minimumTemperatureDistance": {
+            "type": "integer",
+            "minimum": 0,
+            "maximum": 40,
+            "exclusiveMaximum": true
+        }
+    },
+    "required": [
+        "userEmail",
+        "userName",
+        "userCountry",
+        "weatherExpectation",
+        "minimumTemperatureDistance"
+    ]
+}
