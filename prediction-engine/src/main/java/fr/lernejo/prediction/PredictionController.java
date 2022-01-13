@@ -17,7 +17,7 @@ import static java.util.Map.copyOf;
 public class PredictionController {
     private final TemperatureService temperatureService = new TemperatureService();
 
-    @GetMapping(path = "/api/tempratrue")
+    @GetMapping(path = "/api/temperatrue")
     Object getTemprature(@RequestParam String country) {
         try {
             double tempratureResult1 = temperatureService.getTemperature(country);

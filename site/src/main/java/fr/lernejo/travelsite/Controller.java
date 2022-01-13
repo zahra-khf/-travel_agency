@@ -31,7 +31,10 @@ public class Controller {
         JSONObject selectedUserData = (JSONObject) user1.get(userName);
         ArrayList<Object> countries = new ArrayList<Object>();
         HashMap<String, Object> country = new HashMap<String, Object>();
-        country.put("name","Tunisia");
+        country.put("country","Tunisia");
+        country.put("temperature",20.0f);
+        countries.add(country);
+        country.put("country","Tunisia");
         country.put("temperature",20.0f);
         countries.add(country);
         return countries;
